@@ -24,6 +24,12 @@ namespace WordCounter.Models
             _userPhrase = newPhrase;
         }
 
+        public string toLowerCase(string word)
+        {
+            word = _userPhrase.ToLower();
+            return word;
+        }
+
         public int CheckRepeatedWord(string userWord)
         {
             int wordCount = 0;
