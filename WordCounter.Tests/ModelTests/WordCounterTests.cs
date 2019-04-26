@@ -51,15 +51,15 @@ namespace WordCounter.Tests
 
         public void CheckWordNum_CheckTimesWordIsCaught_Int()
         {
-            string userPhrase = "word word word";
-            string userWord = "word";
+            string userPhrase = "cat cat cat cat cat";
+            string userWord = "cat";
             Phrase newPhrase = new Phrase(userPhrase , userWord);
 
             string checkedString = newPhrase.GetPhrase();
             string checkedWord = newPhrase.GetWord();
             int wordCount =newPhrase.CheckRepeatedWord(checkedString, checkedWord);
 
-            Assert.AreEqual(3, wordCount);
+            Assert.AreEqual(5, wordCount);
         }
 
         [TestMethod]
