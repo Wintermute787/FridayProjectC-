@@ -75,5 +75,19 @@ namespace WordCounter.Tests
 
             Assert.AreEqual(true, result);
         }
+
+        [TestMethod]
+        public void CheckSentenceBool_CheckIfSentHasNum_true()
+        {
+            string userPhrase = "word1";
+            string userWord = "word";
+            Phrase newPhrase = new Phrase(userPhrase, userWord);
+
+            string checkedSent = newPhrase.GetPhrase();
+            bool result = newPhrase.HasNum(checkedSent);
+
+            Assert.AreEqual(true, result);
+
+        }
     }
 }

@@ -57,11 +57,11 @@ namespace WordCounter.Models
         public bool HasNum(string sentence)
         {
             char[] charSent = sentence.ToCharArray();
-            List<int> numList = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            List<char> numList = new List<char>() {'0','1','2','3','4','5','6','7','8','9' };
             
-            for(int i =0; i < charSent.Length -1; i++)
+            for(int i = 0; i < charSent.Length; i++)
             {
-                if (charSent[i] == numList[i])
+                if (numList.Contains(charSent[i])) 
                 {
                     return true;
                 }
