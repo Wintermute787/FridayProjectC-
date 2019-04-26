@@ -37,5 +37,18 @@ namespace WordCounter.Tests
 
             Assert.AreEqual(updatedPhrase, result);
         }
+
+        [TestMethod]
+
+        public void CheckWordNum_CheckTimesWordIsCaught_Int()
+        {
+            string userPhrase = "word word word";
+            Phrase newPhrase = new Phrase(userPhrase);
+
+            string checkedString = newPhrase.GetPhrase();
+            int wordCount =newPhrase.CheckRepeatedWord(checkedString);
+
+            Assert.AreEqual(3, wordCount);
+        }
     }
 }
