@@ -42,6 +42,12 @@ namespace WordCounter.Models
             return word;
         }
 
+        public string toUpperCase(string word)
+        {
+            word = _userPhrase.ToUpper();
+            return word;
+        }
+
         public bool HasSpace(string sentence)
         {
             if(sentence.Contains(" "))
