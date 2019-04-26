@@ -61,5 +61,19 @@ namespace WordCounter.Tests
 
             Assert.AreEqual(3, wordCount);
         }
+
+        [TestMethod]
+
+        public void CheckSpaceBool_ChecksIfSentHasSpace_True()
+        {
+            string userPhrase = "word word word";
+            string userWord = "word";
+            Phrase newPhrase = new Phrase(userPhrase, userWord);
+
+            string checkedPhrase = newPhrase.GetPhrase();
+            bool result = newPhrase.HasSpace(checkedPhrase);
+
+            Assert.AreEqual(true, result);
+        }
     }
 }

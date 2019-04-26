@@ -42,6 +42,18 @@ namespace WordCounter.Models
             return word;
         }
 
+        public bool HasSpace(string sentence)
+        {
+            if(sentence.Contains(" "))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public int CheckRepeatedWord(string userPhrase, string checkedWord)
         {
             int wordCount = 0;
