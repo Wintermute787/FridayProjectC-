@@ -79,7 +79,7 @@ namespace WordCounter.Tests
         [TestMethod]
         public void CheckSentenceBool_CheckIfSentHasNum_true()
         {
-            string userPhrase = "word1";
+            string userPhrase = "word";
             string userWord = "word";
             Phrase newPhrase = new Phrase(userPhrase, userWord);
 
