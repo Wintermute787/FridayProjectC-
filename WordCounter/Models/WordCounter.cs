@@ -31,6 +31,11 @@ namespace WordCounter.Models
             _userPhrase = newPhrase;
         }
 
+        public void SetWord(string newWord)
+        {
+            _checkedWord = newWord;
+        }
+
         public string toLowerCase(string word)
         {
             word = _userPhrase.ToLower();

@@ -12,7 +12,7 @@ namespace WordCounter.Tests
         [TestMethod]
         public void PhraseConstructor_CreatesInstancesOfPhrase_Phrase()
         {
-            Phrase newPhrase = new Phrase("test");
+            Phrase newPhrase = new Phrase("test", "test");
             Assert.AreEqual(typeof(Phrase), newPhrase.GetType());
         }
 
@@ -20,22 +20,31 @@ namespace WordCounter.Tests
         public void GetPhrase_ReturnsPhrase_String()
         {
             string phrase = "word word word";
-            Phrase newPhrase = new Phrase(phrase);
+            string checkedWord = "word";
+            Phrase newPhrase = new Phrase(phrase, checkedWord);
             string result = newPhrase.GetPhrase();
+            string resultWord = newPhrase.GetWord();
             Assert.AreEqual(result, phrase);
+            Assert.AreEqual(resultWord, checkedWord);
         }
 
         [TestMethod]
         public void SetPhrase_SetsThePhrase_String()
         {
             string userPhrase = "word word word";
-            Phrase newPhrase = new Phrase(userPhrase);
+            string checkedWord = "word";
+            Phrase newPhrase = new Phrase(userPhrase, checkedWord);
+
 
             string updatedPhrase = "another phrase";
+            string updatedWord = "another word";
             newPhrase.SetString(updatedPhrase);
+            newPhrase.SetWord(updatedWord);
             string result = newPhrase.GetPhrase();
+            string resultWord = newPhrase.GetWord();
 
             Assert.AreEqual(updatedPhrase, result);
+            Assert.AreEqual(updatedWord, resultWord);
         }
 
         [TestMethod]
@@ -43,10 +52,12 @@ namespace WordCounter.Tests
         public void CheckWordNum_CheckTimesWordIsCaught_Int()
         {
             string userPhrase = "word word word";
-            Phrase newPhrase = new Phrase(userPhrase);
+            string userWord = "word";
+            Phrase newPhrase = new Phrase(userPhrase , userWord);
 
             string checkedString = newPhrase.GetPhrase();
-            int wordCount =newPhrase.CheckRepeatedWord(checkedString);
+            string checkedWord = newPhrase.GetWord();
+            int wordCount =newPhrase.CheckRepeatedWord(checkedString, checkedWord);
 
             Assert.AreEqual(3, wordCount);
         }
