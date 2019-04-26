@@ -54,6 +54,25 @@ namespace WordCounter.Models
             }
         }
 
+        public bool HasNum(string sentence)
+        {
+            char[] charSent = sentence.ToCharArray();
+            List<int> numList = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            
+            for(int i =0; i < charSent.Length; i++)
+            {
+                if(charSent[i] == numList[i])
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
+
         public int CheckRepeatedWord(string userPhrase, string checkedWord)
         {
             int wordCount = 0;
