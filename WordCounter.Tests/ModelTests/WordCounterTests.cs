@@ -79,7 +79,7 @@ namespace WordCounter.Tests
         [TestMethod]
         public void CheckSentenceBool_CheckIfSentHasNum_true()
         {
-            string userPhrase = "word";
+            string userPhrase = "wor45d";
             string userWord = "word";
             Phrase newPhrase = new Phrase(userPhrase, userWord);
 
@@ -88,6 +88,19 @@ namespace WordCounter.Tests
 
             Assert.AreEqual(true, result);
 
+        }
+
+        [TestMethod]
+        public void CheckSentenceBool_CheckIfSentHasSym_true()
+        {
+            string userPhrase = "wor#$d";
+            string userWord = "word";
+            Phrase newPhrase = new Phrase(userPhrase, userWord);
+
+            string checkedSent = newPhrase.GetPhrase();
+            bool result = newPhrase.HasSym(checkedSent);
+
+            Assert.AreEqual(true, result);
         }
     }
 }
