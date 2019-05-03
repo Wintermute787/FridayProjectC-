@@ -25,6 +25,9 @@ namespace WordCounter.Controllers
         public ActionResult Create(string sentence, string checkedword)
         {
             Phrase newphrase = new Phrase(sentence, checkedword);
+            string userPhrase = newphrase.GetPhrase();
+            string userWord = newphrase.GetWord();
+            int wordCount = newphrase.CheckRepeatedWord();
             return RedirectToAction("Index");
         }
     }

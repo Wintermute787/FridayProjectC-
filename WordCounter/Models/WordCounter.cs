@@ -104,15 +104,15 @@ namespace WordCounter.Models
                 return false;
             }
         }
-        public int CheckRepeatedWord(string userPhrase, string checkedWord)
+        public int CheckRepeatedWord()
         {
             int wordCount = 0;
-            string checkedPhrase = userPhrase.ToLower();
+            string checkedPhrase = _userPhrase.ToLower();
             string[] words = checkedPhrase.Split(" ");
 
             for (int i = 0; i < words.Length; i++)
             {
-                if (checkedWord.Equals(words[i]))
+                if (_checkedWord.Equals(words[i]))
                 {
                     wordCount++;
                 }

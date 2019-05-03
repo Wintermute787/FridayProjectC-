@@ -55,9 +55,9 @@ namespace WordCounter.Tests
             string userWord = "puppy";
             Phrase newPhrase = new Phrase(userPhrase , userWord);
 
-            string checkedString = newPhrase.GetPhrase();
-            string checkedWord = newPhrase.GetWord();
-            int wordCount =newPhrase.CheckRepeatedWord(checkedString, checkedWord);
+            // string checkedString = newPhrase.GetPhrase();
+            // string checkedWord = newPhrase.GetWord();
+            int wordCount = newPhrase.CheckRepeatedWord();
 
             Assert.AreEqual(0, wordCount);
         }
