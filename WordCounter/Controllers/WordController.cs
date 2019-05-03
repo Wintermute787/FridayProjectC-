@@ -12,6 +12,7 @@ namespace WordCounter.Controllers
         {
             List<Phrase> AllItems = Phrase.GetAll();
             return View(AllItems);
+            
         }
 
         [HttpGet("/word/new")]
@@ -21,10 +22,10 @@ namespace WordCounter.Controllers
         }
 
         [HttpPost("/word")]
-        public ActionResult Create(string sentence, string checkword)
+        public ActionResult Create(string sentence, string checkedword)
         {
-            Phrase phrase = new Phrase(sentence, checkword);
-            return RedirectToAction("index");
+            Phrase newphrase = new Phrase(sentence, checkedword);
+            return RedirectToAction("Index");
         }
     }
 }

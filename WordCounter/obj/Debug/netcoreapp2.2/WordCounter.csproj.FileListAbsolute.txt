@@ -21,3 +21,5 @@ C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\
 C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.dll
 C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.pdb
 C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.csproj.CopyComplete
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\Word\CreateForm.g.cshtml.cs
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\Word\Index.g.cshtml.cs

@@ -33,7 +33,7 @@ namespace WordCounter.Tests
             var result = actionResult.ActionName;
 
             //Assert
-            Assert.AreEqual(result, "index");
+            Assert.AreEqual(result, "Index");
 
         }
     }
