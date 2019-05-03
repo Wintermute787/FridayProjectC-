@@ -8,10 +8,10 @@ namespace WordCounter.Controllers
 
     {
         [HttpGet("/word")]
-        public ActionResult Index()
+        public ActionResult Index(Phrase newphrase)
         {
-            List<Phrase> AllItems = Phrase.GetAll();
-            return View(AllItems);
+            
+            return View(newphrase);
             
         }
 
@@ -28,7 +28,9 @@ namespace WordCounter.Controllers
             string userPhrase = newphrase.GetPhrase();
             string userWord = newphrase.GetWord();
             int wordCount = newphrase.CheckRepeatedWord();
-            return RedirectToAction("Index");
+            return View("index",newphrase);
+      
+            
         }
     }
 }

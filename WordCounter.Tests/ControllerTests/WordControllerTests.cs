@@ -13,13 +13,16 @@ namespace WordCounter.Tests
         public void Index_HasCorrectModelType_WordList()
         {
             //Arrange
-            ViewResult indexView = new WordController().Index() as ViewResult;
+            string userPhrase = "word word";
+            string userWord = "word";
+            Phrase newPhrase = new Phrase(userPhrase, userWord);
+            ViewResult indexView = new WordController().Index(newPhrase) as ViewResult;
 
             //Act
             var result = indexView.ViewData.Model;
 
             //Assert
-            Assert.IsInstanceOfType(result, typeof(List<Phrase>));    
+            Assert.IsInstanceOfType(result, typeof(Phrase));    
         }
 
         [TestMethod]

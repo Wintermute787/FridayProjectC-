@@ -15,9 +15,12 @@ namespace WordCounter.Tests
         {
             //Arrange
             WordController controller = new WordController();
+            string userPhrase = "word word";
+            string userWord = "word";
+            Phrase newPhrase = new Phrase(userPhrase, userWord);
 
             //Act
-            ActionResult indexView = controller.Index();
+            ActionResult indexView = controller.Index(newPhrase);
 
             //Assert
             Assert.IsInstanceOfType(indexView, typeof(ViewResult));

@@ -12,14 +12,9 @@
   </head>
   <body>
     <h1>Word Counter</h1>
-    
-    @foreach(Phrase element in Model)
-    {
-        
-        <h2>@element.GetPhrase()</h2>
-        <h2>@element.GetWord()</h2>
-        
-    }
+    <h2>@Model.GetPhrase()</h2>
+    <h2>@Model.GetWord()</h2>
+    <h2>@Model.CheckRepeatedWord()</h2>
 
   </body>
 </html>
