@@ -101,5 +101,19 @@ namespace WordCounter.Tests
 
             Assert.AreEqual(true, result);
         }
+
+        [TestMethod]
+        public void RemoveWordFromNum_RemovesNum_String()
+        {
+            string userPhrase = "Wor45d";
+            string userWord = "word";
+            Phrase newPhrase = new Phrase(userPhrase, userWord);
+
+            string adjustedWord = newPhrase.RemoveNum();
+
+            Assert.AreEqual("Word", adjustedWord);
+            
+
+        }
     }
 }

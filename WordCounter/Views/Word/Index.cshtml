@@ -26,12 +26,13 @@
     </div>
   </nav>
 
-  <h1>Here is your word count!</h2>
+ 
 
   <div class="container user-phrase">
-      <h2 class="phrase">@Model.GetPhrase()</h2>
-      <h2 class="word">@Model.GetWord()</h2>
-      <h2 class="number">@Model.CheckRepeatedWord()</h2>
+      
+      <h2 class="phrase">Your Phrase: @Model.GetPhrase()</h2>
+      <h2 class="word">The Word to look for: @Model.GetWord()</h2>
+      <h2 class="number">The number of times the word was counted: @Model.CheckRepeatedWord()</h2>
   </div>
 
 

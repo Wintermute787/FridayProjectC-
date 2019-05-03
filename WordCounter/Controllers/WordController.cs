@@ -26,9 +26,11 @@ namespace WordCounter.Controllers
         {
             Phrase newphrase = new Phrase(sentence, checkedword);
             string userPhrase = newphrase.GetPhrase().ToLower();
+            bool numPhrase = newphrase.HasNum(userPhrase);
+            newphrase.RemoveNum();
             string userWord = newphrase.GetWord().ToLower();
             int wordCount = newphrase.CheckRepeatedWord();
-            return View("index",newphrase);
+            return View("Index",newphrase);
       
             
         }
