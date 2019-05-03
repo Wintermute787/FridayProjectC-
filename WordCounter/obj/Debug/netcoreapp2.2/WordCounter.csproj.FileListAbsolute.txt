@@ -7,3 +7,17 @@ C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\
 C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.AssemblyInfo.cs
 C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.dll
 C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.pdb
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.runtimeconfig.json
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.runtimeconfig.dev.json
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorAssemblyInfo.cache
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorAssemblyInfo.cs
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorTargetAssemblyInfo.cache
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.Views.dll
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.Views.pdb
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.TagHelpers.input.cache
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.TagHelpers.output.cache
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorCoreGenerate.cache
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorTargetAssemblyInfo.cs
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.Views.pdb
+C:\Users\Joe\Desktop\epicodusC#\WordCounter\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.csproj.CopyComplete

@@ -1,12 +1,21 @@
-﻿using System;
+﻿
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
-namespace WordCounter
+namespace CdOrganizer
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var host = new WebHostBuilder()
+              .UseKestrel()
+              .UseContentRoot(Directory.GetCurrentDirectory())
+              .UseIISIntegration()
+              .UseStartup<Startup>()
+              .Build();
+
+            host.Run();
         }
     }
 }

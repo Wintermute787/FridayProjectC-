@@ -9,11 +9,13 @@ namespace WordCounter.Models
     {
         private string _userPhrase;
         private string _checkedWord;
+        private static List<Phrase> _instances = new List<Phrase> { };
 
         public Phrase(string sentence, string checkedWord)
         {
             _userPhrase = sentence;
             _checkedWord = checkedWord;
+            _instances.Add(this);
         }
 
         public string GetPhrase()
@@ -34,6 +36,16 @@ namespace WordCounter.Models
         public void SetWord(string newWord)
         {
             _checkedWord = newWord;
+        }
+
+        public static List<Phrase> GetAll()
+        {
+            return _instances;
+        }
+
+        public static void ClearAll()
+        {
+            _instances.Clear();
         }
 
         public string toLowerCase(string word)
