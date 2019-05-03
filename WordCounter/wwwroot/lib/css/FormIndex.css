@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1504814532849-cff240bbc503?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(12, 24, 33, 0.541);
+    
+}
+
+.navbar .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.navbar .navbar-nav > li > a {
+    color: white;
+    text-transform: uppercase;
+    transition: all .2s;
+    
+}
+
+.navbar .navbar-nav > li > a:active,
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    transform: scale(1.1);
+    
+    
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
